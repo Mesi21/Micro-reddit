@@ -1,5 +1,6 @@
 # frozen_string_literal: true
-#Post Model
+
+# Post Model
 class Post < ApplicationRecord
   validates :title, presence: true, length: { maximum: 70 },
                     uniqueness: { case_sensitive: false }
