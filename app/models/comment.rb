@@ -1,7 +1,8 @@
 # frozen_string_literal: true
-#Comment model
+
+# Comment model
 class Comment < ApplicationRecord
-  validates :body, presence: true, 
+  validates :body, presence: true,
                    uniqueness: { case_sensitive: false }
   belongs_to :user
   belongs_to :post
